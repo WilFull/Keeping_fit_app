@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Keeping fit</string>
+    <string name="greetings">Привет!</string>
+    <string name="wrt_name">Введите ваше имя</string>
+    <string name="name">Имя...</string>
+    <string name="btn_continue">Продолжить</string>
+    <string name="get_to_know">Узнаем вас получше?</string>
+    <string name="type_info">Введите ваши физические показатели</string>
+    <string name="age">Возраст...</string>
+    <string name="hight">Рост...</string>
+    <string name="weight">Вес...</string>
+    <string name="f_gender">Жен</string>
+    <string name="m_gender">Муж</string>
+    <string name="btn_skip">Пропустить</string>
+    <string name="training">Тренировки</string>
+    <string name="diets">Питание</string>
+    <string name="health">Здоровье</string>
+    <string name="hands">Руки</string>
+    <string name="legs">Ноги</string>
+    <string name="back">Спина|Плечи</string>
+    <string name="breast">Грудь</string>
+    <string name="press">Пресс</string>
+    <string name="buttocks">Ягодицы</string>
+    <string name="balanced_diet">Сбалансированное</string>
+    <string name="weight_loss_diet">Для похудения</string>
+    <string name="veg_diet">Вегетарианское</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

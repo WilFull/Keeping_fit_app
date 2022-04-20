@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_greetings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="44sp"
+        android:layout_marginTop="200sp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/greetings"
+        android:textColor="@color/textColor"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/text_wrt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_greetings"
+        android:layout_marginLeft="44sp"
+        android:fontFamily="@font/roboto_light"
+        android:text="@string/wrt_name"
+        android:textColor="@color/textColor"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/user_filed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_wrt_name"
+        android:layout_marginHorizontal="44sp"
+        android:layout_marginTop="23sp"
+        android:fontFamily="@font/roboto_thin"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:background="@color/background"/>
+
+    <Button
+        android:id="@+id/btn_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_filed"
+        android:layout_marginHorizontal="44sp"
+        android:layout_marginTop="23sp"
+        android:backgroundTint="@color/btnColor"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/btn_continue"
+        android:textColor="@color/textColor"
+        android:textSize="24sp" />
+
+
+</RelativeLayout>

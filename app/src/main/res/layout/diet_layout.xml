@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/caret_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+
+        android:backgroundTint="@color/black">
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_bold"
+            android:minHeight="48dp"
+
+            android:text="@string/app_name"
+            android:textColor="@color/textColor"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/training"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_light"
+            android:minHeight="48dp"
+
+            android:text="@string/diets"
+            android:textColor="@color/textColor"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        android:layout_below="@id/caret_linear_layout"/>
+
+    <Button
+        android:id="@+id/btn_balanced"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line1"
+        android:layout_marginHorizontal="40sp"
+        android:layout_marginTop="23sp"
+        android:backgroundTint="@color/background"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/balanced_diet"
+        android:textColor="@color/textColor"
+        android:textSize="24sp"
+        android:minHeight="60sp"/>
+
+    <Button
+        android:id="@+id/btn_weight_loss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_balanced"
+        android:layout_marginHorizontal="40sp"
+        android:layout_marginTop="23sp"
+        android:backgroundTint="@color/background"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/weight_loss_diet"
+        android:textColor="@color/textColor"
+        android:textSize="24sp"
+        android:minHeight="60sp"/>
+
+    <Button
+        android:id="@+id/btn_veg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_weight_loss"
+        android:layout_marginHorizontal="40sp"
+        android:layout_marginTop="23sp"
+        android:backgroundTint="@color/background"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/veg_diet"
+        android:textColor="@color/textColor"
+        android:textSize="24sp"
+        android:minHeight="60sp"/>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:minHeight="83dp"
+        android:background="@color/white"
+        />
+
+
+</RelativeLayout>
