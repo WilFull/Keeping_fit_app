@@ -14,7 +14,6 @@
         android:layout_marginTop="10dp"
         android:orientation="horizontal"
         android:weightSum="2"
-
         android:backgroundTint="@color/black">
 
         <TextView
@@ -52,17 +51,230 @@
         android:background="@android:color/black"
         android:layout_below="@id/caret_linear_layout"/>
 
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/nav_3"
+    <TextView
+        android:id="@+id/greeting_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:minHeight="83dp"
-        android:background="@color/white"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="28sp"
+        android:layout_below="@id/line1"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/greetings"
+        android:textColor="@color/textColor"
+        android:textSize="24sp"
         />
 
+    <TextView
+        android:id="@+id/your_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/greeting_name"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="29sp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/your_age"
+        android:textColor="@color/textColor"
+        android:textSize="20sp" />
 
+    <TextView
+        android:id="@+id/your_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/your_age"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="15sp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/your_weight"
+        android:textColor="@color/textColor"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/your_hight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/your_weight"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="15sp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/your_hight"
+        android:textColor="@color/textColor"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/daily_calorie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/your_hight"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="53sp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/calory_daily_intake"
+        android:textColor="@color/textColor"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/health_linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_below="@id/daily_calorie"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="5sp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="286dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <TextView
+            android:id="@+id/body_index"
+            android:layout_width="391dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/body_index"
+            android:textColor="@color/textColor"
+
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/index_pic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="100sp"
+            android:contentDescription="TODO"
+
+            android:src="@drawable/ic_indexlogo" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/data_layout"
+        android:layout_width="373dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/your_hight"
+        android:layout_marginTop="125sp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <ImageView
+            android:id="@+id/acc_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:contentDescription="TODO"
+            android:src="@drawable/ic_acclogo" />
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/background"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/update_data"
+            android:textColor="@color/textColor"
+
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/water_layout"
+        android:layout_width="373dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/your_hight"
+        android:layout_marginTop="180sp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <ImageView
+            android:id="@+id/water_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:contentDescription="TODO"
+            android:src="@drawable/ic_waterpic" />
+
+        <TextView
+            android:id="@+id/water_balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:layout_marginLeft="12sp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/background"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/water_balance"
+            android:textColor="@color/textColor"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttons_plus_minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/your_hight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/btn_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?android:selectableItemBackground"
+            android:fontFamily="@font/roboto_light"
+            android:text="@string/plus"
+            android:textColor="@color/textColor"
+            android:textSize="24sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/black" />
+
+        <Button
+            android:id="@+id/btn_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:background="?android:selectableItemBackground"
+            android:fontFamily="@font/roboto_light"
+            android:text="@string/minus"
+            android:textColor="@color/textColor"
+            android:textSize="24sp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/how_much"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/your_hight"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="310sp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/drank_howMuch"
+        android:textColor="@color/textColor"
+        android:textSize="20sp" />
 
 
 

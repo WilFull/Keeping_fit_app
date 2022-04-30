@@ -28,6 +28,16 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="your_age">Ваш возраст:</string>
+    <string name="your_weight">Ваш вес:</string>
+    <string name="your_hight">Ваш рост:</string>
+    <string name="calory_daily_intake">Суточная норма калорий:</string>
+    <string name="body_index">Индекс массы тела:</string>
+    <string name="update_data">Обновить данные</string>
+    <string name="water_balance">Водный баланс</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="drank_howMuch">Вы выпили сегодня:</string>
 
 
 </resources>

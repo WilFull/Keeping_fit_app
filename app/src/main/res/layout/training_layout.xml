@@ -136,14 +136,9 @@
         android:textSize="24sp"
         android:minHeight="60sp"/>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/nav_1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:minHeight="83dp"
-        android:background="@color/white"
-        />
+
+
+
 
 
 </RelativeLayout>
