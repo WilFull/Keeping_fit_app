@@ -38,6 +38,15 @@
     <string name="plus">+</string>
     <string name="minus">-</string>
     <string name="drank_howMuch">Вы выпили сегодня:</string>
+    <string name="training_1">Тренировка 1</string>
+    <string name="training_2">Тренировка 2</string>
+    <string name="training_3">Тренировка 3</string>
+    <string name="training_4">Тренировка 4</string>
+    <string name="training_5">Тренировка 5</string>
+    <string name="training_6">Тренировка 6</string>
+    <string name="training_7">Тренировка 7</string>
+    <string name="time">40-60 мин</string>
+    <string name="trainings">Тренировка</string>
 
 
 </resources>

@@ -55,14 +55,13 @@
         android:id="@+id/greeting_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/line1"
         android:layout_marginLeft="38dp"
         android:layout_marginTop="28sp"
-        android:layout_below="@id/line1"
         android:fontFamily="@font/roboto_bold"
         android:text="@string/greetings"
         android:textColor="@color/textColor"
-        android:textSize="24sp"
-        />
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/your_age"
@@ -115,7 +114,7 @@
     <LinearLayout
         android:id="@+id/health_linear_layout"
         android:layout_width="wrap_content"
-        android:layout_height="27dp"
+        android:layout_height="48dp"
         android:layout_below="@id/daily_calorie"
         android:layout_marginStart="38dp"
         android:layout_marginTop="5sp"
@@ -137,15 +136,19 @@
 
             android:textSize="20sp" />
 
-        <ImageView
-            android:id="@+id/index_pic"
+        <Button
+            android:id="@+id/btn_continue"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_height="match_parent"
             android:layout_marginLeft="100sp"
-            android:contentDescription="TODO"
+            android:backgroundTint="@color/background"
+            android:fontFamily="@font/roboto_bold"
+            android:text="i"
+            android:textColor="@color/textColor"
+            android:textSize="24sp"
+            android:layout_weight="1"/>
 
-            android:src="@drawable/ic_indexlogo" />
+
 
     </LinearLayout>
 

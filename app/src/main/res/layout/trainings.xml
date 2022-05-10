@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/caret_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+
+        android:backgroundTint="@color/black">
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_bold"
+            android:minHeight="48dp"
+
+            android:text="@string/app_name"
+            android:textColor="@color/textColor"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/training"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_light"
+            android:minHeight="48dp"
+
+            android:text="@string/training"
+            android:textColor="@color/textColor"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        android:layout_below="@id/caret_linear_layout"/>
+
+    <TextView
+        android:id="@+id/text_hands_training1"
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:layout_below="@id/line1"
+        android:textAlignment="center"
+        android:layout_marginTop="17sp"
+        android:backgroundTint="@color/background"
+        android:fontFamily="@font/roboto_bold"
+        android:minHeight="60sp"
+        android:text="@string/trainings"
+        android:textColor="@color/textColor"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/time_hands_training1"
+        android:layout_width="match_parent"
+        android:layout_height="21sp"
+        android:layout_below="@id/text_hands_training1"
+        android:layout_marginTop="11sp"
+        android:backgroundTint="@color/background"
+        android:fontFamily="@font/roboto_bold"
+        android:minHeight="60sp"
+        android:text="@string/time"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="12sp" />
+
+
+
+
+
+</RelativeLayout>
