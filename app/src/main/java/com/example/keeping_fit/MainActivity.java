@@ -31,7 +31,15 @@ public class MainActivity extends AppCompatActivity {
     // начать activity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.welcome_screen);
+
+
+    }
+
+    protected void mainMenu() {
+
         setContentView(R.layout.main_menu);
+
 
         bottomNavigationView = findViewById(R.id.nav_view);
 
@@ -55,6 +63,5 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
-
     }
 }
