@@ -6,17 +6,17 @@
     app:startDestination="@id/navigation_training">
     <fragment
         android:id="@+id/navigation_training"
-        android:name="com.example.keeping_fit.training_fragment"
+        android:name="com.example.keeping_fit.TrainingFragment"
         android:label="fragment_first"
         tools:layout="@layout/training_layout" />
     <fragment
         android:id="@+id/navigation_diet"
-        android:name="com.example.keeping_fit.diet_fragment"
+        android:name="com.example.keeping_fit.DietFragment"
         android:label="fragment_second"
         tools:layout="@layout/diet_layout" />
     <fragment
         android:id="@+id/navigation_health"
-        android:name="com.example.keeping_fit.health_fragment"
+        android:name="com.example.keeping_fit.HealthFragment"
         android:label="fragment_third"
         tools:layout="@layout/health_layout" />
 </navigation>

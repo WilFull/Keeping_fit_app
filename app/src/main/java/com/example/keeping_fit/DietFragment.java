@@ -10,11 +10,11 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-public class diet_fragment extends Fragment {
+public class DietFragment extends Fragment {
 
     @Nullable
     @Override
-    // метод для отображения  diet_layout во фрагменте diet_fragment
+    // метод для отображения  diet_layout во фрагменте DietFragment
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.diet_layout, container, false);
     }

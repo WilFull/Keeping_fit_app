@@ -1,30 +1,15 @@
 package com.example.keeping_fit;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.navigation.ui.AppBarConfiguration;
+
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.AdapterView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-
-
-import androidx.navigation.ui.NavigationUI;
-
 
 public class MainActivity extends AppCompatActivity {
-
-    BottomNavigationView bottomNavigationView;
-
-    training_fragment trainingFragment = new training_fragment();
-    diet_fragment dietFragment = new diet_fragment();
-    health_fragment healthFragment = new health_fragment();
 
 
     @Override
@@ -32,14 +17,19 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.welcome_screen);
-
-
     }
+
+
 
     protected void mainMenu() {
 
-        setContentView(R.layout.main_menu);
+        BottomNavigationView bottomNavigationView;
 
+        TrainingFragment trainingFragment = new TrainingFragment();
+        DietFragment dietFragment = new DietFragment();
+        HealthFragment healthFragment = new HealthFragment();
+
+        setContentView(R.layout.main_menu);
 
         bottomNavigationView = findViewById(R.id.nav_view);
 
