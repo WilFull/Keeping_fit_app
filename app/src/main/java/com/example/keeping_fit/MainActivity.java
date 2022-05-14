@@ -2,8 +2,10 @@ package com.example.keeping_fit;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
@@ -17,8 +19,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.welcome_screen);
+
     }
 
+    // Метод для нажатия кнопки "Продолжить" в приветсвенном экране
+    public void Continue(View view){
+        Intent intent = new Intent(this, BasicInfo.class);
+        startActivity(intent);
+    }
 
 
     protected void mainMenu() {

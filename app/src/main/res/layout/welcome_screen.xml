@@ -54,7 +54,9 @@
         android:fontFamily="@font/roboto_bold"
         android:text="@string/btn_continue"
         android:textColor="@color/textColor"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:onClick="Continue"
+        />
 
 
 </RelativeLayout>
