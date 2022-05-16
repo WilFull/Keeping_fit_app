@@ -123,7 +123,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btn_continue"
+        android:id="@+id/btnСntToMainMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/user_weight"
@@ -136,10 +136,10 @@
         android:textSize="24sp" />
 
     <Button
-        android:id="@+id/btn_skip"
+        android:id="@+id/btnSkipToMainMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/btn_continue"
+        android:layout_below="@id/btnСntToMainMenu"
         android:layout_marginHorizontal="121sp"
         android:layout_marginTop="20sp"
         android:backgroundTint="@color/background"
