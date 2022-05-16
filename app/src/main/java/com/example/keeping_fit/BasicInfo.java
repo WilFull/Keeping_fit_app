@@ -28,7 +28,7 @@ public class BasicInfo extends Activity {
         View.OnClickListener oclBtnSkipToMainMenu = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(BasicInfo.this, MainActivity.class);
+                Intent intent = new Intent(BasicInfo.this, MainMenu.class);
                 startActivity(intent);
             }
         };
