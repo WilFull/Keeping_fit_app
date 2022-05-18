@@ -69,7 +69,7 @@ public class TrainingFragment extends Fragment {
             }
         });
 
-        // Кнопка грудь
+        // Кнопка ягодицы
         Button btnGoToButtocksTraining = (Button) view.findViewById(R.id.btnGoToButtocksTraining); // объявляем кнопку
         btnGoToButtocksTraining.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -78,6 +78,18 @@ public class TrainingFragment extends Fragment {
                 ((MainMenuActivity)getActivity()).setNewFragment(buttMenuFragment);
             }
         });
+
+        // Кнопка ягодицы
+        Button btnGoToPressTraining = (Button) view.findViewById(R.id.btnGoToPressTraining); // объявляем кнопку
+        btnGoToPressTraining.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                PressMenuFragment pressMenuFragment = new PressMenuFragment();
+                ((MainMenuActivity)getActivity()).setNewFragment(pressMenuFragment);
+            }
+        });
+
+
 
         return view;
     }

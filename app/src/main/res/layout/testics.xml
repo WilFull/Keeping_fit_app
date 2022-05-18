@@ -39,7 +39,7 @@
             android:fontFamily="@font/roboto_light"
             android:minHeight="48dp"
 
-            android:text="@string/training"
+            android:text="@string/hands"
             android:textColor="@color/textColor"
             android:textSize="20sp" />
 
@@ -53,92 +53,101 @@
         android:layout_below="@id/caret_linear_layout"/>
 
     <Button
-        android:id="@+id/btnGoToHandsTraining"
+        android:id="@+id/btn_hands_training1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="54sp"
         android:layout_below="@id/line1"
         android:layout_marginHorizontal="60sp"
-        android:layout_marginTop="23sp"
+        android:layout_marginTop="17sp"
         android:backgroundTint="@color/background"
         android:fontFamily="@font/roboto_bold"
         android:minHeight="60sp"
-        android:text="@string/hands"
+        android:text="@string/training_1"
         android:textColor="@color/textColor"
         android:textSize="24sp" />
 
     <Button
-        android:id="@+id/btnGoToLegsTraining"
+        android:id="@+id/btn_hands_training2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btnGoToHandsTraining"
+        android:layout_height="54sp"
+        android:layout_below="@id/btn_hands_training1"
         android:layout_marginHorizontal="60sp"
-        android:layout_marginTop="23sp"
+        android:layout_marginTop="17sp"
         android:backgroundTint="@color/background"
         android:fontFamily="@font/roboto_bold"
-        android:minHeight="60sp"
-        android:text="@string/legs"
-        android:textColor="@color/textColor"
-        android:textSize="24sp" />
-
-    <Button
-        android:id="@+id/btnGoToBackTraining"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btnGoToLegsTraining"
-        android:layout_marginHorizontal="60sp"
-        android:layout_marginTop="23sp"
-        android:backgroundTint="@color/background"
-        android:fontFamily="@font/roboto_bold"
-        android:minHeight="60sp"
-        android:text="@string/back"
-        android:textColor="@color/textColor"
-        android:textSize="24sp" />
-
-    <Button
-        android:id="@+id/btnGoToBreastTraining"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btnGoToBackTraining"
-        android:layout_marginHorizontal="60sp"
-        android:layout_marginTop="23sp"
-        android:backgroundTint="@color/background"
-        android:fontFamily="@font/roboto_bold"
-        android:minHeight="60sp"
-        android:text="@string/breast"
-        android:textColor="@color/textColor"
-        android:textSize="24sp" />
-
-    <Button
-        android:id="@+id/btnGoToPressTraining"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btnGoToButtocksTraining"
-        android:layout_marginHorizontal="60sp"
-        android:layout_marginTop="23sp"
-        android:backgroundTint="@color/background"
-        android:fontFamily="@font/roboto_bold"
-        android:text="@string/press"
+        android:text="@string/training_2"
         android:textColor="@color/textColor"
         android:textSize="24sp"
         android:minHeight="60sp"/>
 
     <Button
-        android:id="@+id/btnGoToButtocksTraining"
+        android:id="@+id/btn_hands_training3"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btnGoToBreastTraining"
+        android:layout_height="54sp"
+        android:layout_below="@id/btn_hands_training2"
         android:layout_marginHorizontal="60sp"
-        android:layout_marginTop="23sp"
+        android:layout_marginTop="17sp"
         android:backgroundTint="@color/background"
         android:fontFamily="@font/roboto_bold"
-        android:minHeight="60sp"
-        android:text="@string/buttocks"
+        android:text="@string/training_3"
         android:textColor="@color/textColor"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:minHeight="60sp"/>
 
+    <Button
+        android:id="@+id/btn_hands_training4"
+        android:layout_width="match_parent"
+        android:layout_height="54sp"
+        android:layout_below="@id/btn_hands_training3"
+        android:layout_marginHorizontal="60sp"
+        android:layout_marginTop="17sp"
+        android:backgroundTint="@color/background"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/training_4"
+        android:textColor="@color/textColor"
+        android:textSize="24sp"
+        android:minHeight="60sp"/>
 
+    <Button
+        android:id="@+id/btn_hands_training5"
+        android:layout_width="match_parent"
+        android:layout_height="54sp"
+        android:layout_below="@id/btn_hands_training4"
+        android:layout_marginHorizontal="60sp"
+        android:layout_marginTop="17sp"
+        android:backgroundTint="@color/background"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/training_5"
+        android:textColor="@color/textColor"
+        android:textSize="24sp"
+        android:minHeight="60sp"/>
 
+    <Button
+        android:id="@+id/btn_hands_training6"
+        android:layout_width="match_parent"
+        android:layout_height="54sp"
+        android:layout_below="@id/btn_hands_training5"
+        android:layout_marginHorizontal="60sp"
+        android:layout_marginTop="17sp"
+        android:backgroundTint="@color/background"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/training_6"
+        android:textColor="@color/textColor"
+        android:textSize="24sp"
+        android:minHeight="60sp"/>
 
-
+    <Button
+        android:id="@+id/btn_hands_training7"
+        android:layout_width="match_parent"
+        android:layout_height="54sp"
+        android:layout_below="@id/btn_hands_training6"
+        android:layout_marginHorizontal="60sp"
+        android:layout_marginTop="17sp"
+        android:backgroundTint="@color/background"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/training_7"
+        android:textColor="@color/textColor"
+        android:textSize="24sp"
+        android:minHeight="60sp"/>
 
 </RelativeLayout>
