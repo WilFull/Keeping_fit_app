@@ -59,13 +59,23 @@ public class TrainingFragment extends Fragment {
             }
         });
 
-        //
+        // Кнопка грудь
         Button btnGoToBreastTraining = (Button) view.findViewById(R.id.btnGoToBreastTraining); // объявляем кнопку
         btnGoToBreastTraining.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 BreastMenuFragment breastMenuFragment = new BreastMenuFragment();
                 ((MainMenuActivity)getActivity()).setNewFragment(breastMenuFragment);
+            }
+        });
+
+        // Кнопка грудь
+        Button btnGoToButtocksTraining = (Button) view.findViewById(R.id.btnGoToButtocksTraining); // объявляем кнопку
+        btnGoToButtocksTraining.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ButtMenuFragment buttMenuFragment = new ButtMenuFragment();
+                ((MainMenuActivity)getActivity()).setNewFragment(buttMenuFragment);
             }
         });
 
