@@ -58,15 +58,4 @@ public class MainMenuActivity extends FragmentActivity { //FragmentActivity!!
         getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView, fragment).commit();
     }
 
-    public void openHandsMenuFragment() {
-
-        Fragment fragment = getSupportFragmentManager().findFragmentById(R.id.fragmentContainerView);
-
-        if (fragment == null) {
-            fragment = new HandsMenuFragment();
-            getSupportFragmentManager().beginTransaction().add(R.id.fragmentContainerView, fragment).setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN).commit();
-        }
-    }
-
-
-}
+   }

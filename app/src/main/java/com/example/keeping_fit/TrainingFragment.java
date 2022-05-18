@@ -28,8 +28,10 @@ public class TrainingFragment extends Fragment {
     // метод для отображения  training_layout во фрагменте TrainingFragment
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.training_layout, container, false);
-        Button btnGoToHandsTraining = (Button) view.findViewById(R.id.btnGoToHandsTraining);
 
+        Button btnGoToHandsTraining = (Button) view.findViewById(R.id.btnGoToHandsTraining); // объявляем кнопку
+
+        // кнопка "Руки"
         btnGoToHandsTraining.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
