@@ -53,7 +53,7 @@
         android:layout_below="@id/caret_linear_layout"/>
 
     <Button
-        android:id="@+id/btn_balanced"
+        android:id="@+id/btnGoToBalancedDiet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/line1"
@@ -61,16 +61,16 @@
         android:layout_marginTop="23sp"
         android:backgroundTint="@color/background"
         android:fontFamily="@font/roboto_bold"
+        android:minHeight="60sp"
         android:text="@string/balanced_diet"
         android:textColor="@color/textColor"
-        android:textSize="24sp"
-        android:minHeight="60sp"/>
+        android:textSize="24sp" />
 
     <Button
-        android:id="@+id/btn_weight_loss"
+        android:id="@+id/btnGoToWeightLoss"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/btn_balanced"
+        android:layout_below="@id/btnGoToBalancedDiet"
         android:layout_marginHorizontal="40sp"
         android:layout_marginTop="23sp"
         android:backgroundTint="@color/background"
@@ -81,18 +81,18 @@
         android:minHeight="60sp"/>
 
     <Button
-        android:id="@+id/btn_veg"
+        android:id="@+id/btnGoToVegDiet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/btn_weight_loss"
+        android:layout_below="@id/btnGoToWeightLoss"
         android:layout_marginHorizontal="40sp"
         android:layout_marginTop="23sp"
         android:backgroundTint="@color/background"
         android:fontFamily="@font/roboto_bold"
+        android:minHeight="60sp"
         android:text="@string/veg_diet"
         android:textColor="@color/textColor"
-        android:textSize="24sp"
-        android:minHeight="60sp"/>
+        android:textSize="24sp" />
 
 
 

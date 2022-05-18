@@ -16,7 +16,7 @@ public class TrainingFragment extends Fragment {
 
 
 
-    public TrainingFragment() {}
+   // public TrainingFragment() {}
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
