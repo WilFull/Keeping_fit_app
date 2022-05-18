@@ -14,25 +14,31 @@ import android.widget.Button;
 
 public class TrainingFragment extends Fragment {
 
+
+
+    public TrainingFragment() {}
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
+
     @Nullable
     @Override
     // метод для отображения  training_layout во фрагменте TrainingFragment
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.training_layout, container, false);
+        Button btnGoToHandsTraining = (Button) view.findViewById(R.id.btnGoToHandsTraining);
 
-        //View view = inflater.inflate(R.layout.training_layout, null);
-       // Button btnGoToHandsTraining = (Button) view.findViewById(R.id.btnGoToHandsTraining);
+        btnGoToHandsTraining.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                HandsMenuFragment handsMenuFragment = new HandsMenuFragment();
+                ((MainMenuActivity)getActivity()).setNewFragment(handsMenuFragment);
+            }
+        });
 
-       // View.OnClickListener oclBtnGoToHandsTraining = new View.OnClickListener() {
-         //   @Override
-        //    public void onClick(View view) {
-         //       Intent intent = new Intent(TrainingFragment.this.getActivity(), HealthFragment.class);
-           //     startActivity(intent);
-         //   }
-      //  };
-       // btnGoToHandsTraining.setOnClickListener(oclBtnGoToHandsTraining);
-
-
-        return inflater.inflate(R.layout.training_layout, container, false);
+        return view;
     }
 
 }

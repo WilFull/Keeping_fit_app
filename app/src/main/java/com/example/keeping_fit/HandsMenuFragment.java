@@ -18,7 +18,7 @@ public class HandsMenuFragment extends Fragment {
     @Override
     // метод для отображения  health_layout во фрагменте HealthFragment
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.health_layout, container, false);
+        return inflater.inflate(R.layout.hands_menu, container, false);
     }
 
 
