@@ -59,6 +59,16 @@ public class TrainingFragment extends Fragment {
             }
         });
 
+        //
+        Button btnGoToBreastTraining = (Button) view.findViewById(R.id.btnGoToBreastTraining); // объявляем кнопку
+        btnGoToBreastTraining.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                BreastMenuFragment breastMenuFragment = new BreastMenuFragment();
+                ((MainMenuActivity)getActivity()).setNewFragment(breastMenuFragment);
+            }
+        });
+
         return view;
     }
 
