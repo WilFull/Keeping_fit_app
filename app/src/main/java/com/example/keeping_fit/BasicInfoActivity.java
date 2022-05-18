@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class BasicInfo extends Activity {
+public class BasicInfoActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +18,7 @@ public class BasicInfo extends Activity {
         View.OnClickListener oclBtnСntToMainMenu = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(BasicInfo.this, MainMenu.class);
+                Intent intent = new Intent(BasicInfoActivity.this, MainMenuActivity.class);
                 startActivity(intent);
             }
         };
@@ -28,7 +28,7 @@ public class BasicInfo extends Activity {
         View.OnClickListener oclBtnSkipToMainMenu = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(BasicInfo.this, MainMenu.class);
+                Intent intent = new Intent(BasicInfoActivity.this, MainMenuActivity.class);
                 startActivity(intent);
             }
         };

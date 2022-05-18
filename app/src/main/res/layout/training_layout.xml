@@ -53,7 +53,7 @@
         android:layout_below="@id/caret_linear_layout"/>
 
     <Button
-        android:id="@+id/btn_hands"
+        android:id="@+id/btnGoToHandsTraining"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/line1"
@@ -61,58 +61,58 @@
         android:layout_marginTop="23sp"
         android:backgroundTint="@color/background"
         android:fontFamily="@font/roboto_bold"
+        android:minHeight="60sp"
         android:text="@string/hands"
         android:textColor="@color/textColor"
-        android:textSize="24sp"
-        android:minHeight="60sp"/>
+        android:textSize="24sp" />
 
     <Button
-        android:id="@+id/btn_legs"
+        android:id="@+id/btnGoToLegsTraining"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/btn_hands"
+        android:layout_below="@id/btnGoToHandsTraining"
         android:layout_marginHorizontal="60sp"
         android:layout_marginTop="23sp"
         android:backgroundTint="@color/background"
         android:fontFamily="@font/roboto_bold"
+        android:minHeight="60sp"
         android:text="@string/legs"
         android:textColor="@color/textColor"
-        android:textSize="24sp"
-        android:minHeight="60sp"/>
+        android:textSize="24sp" />
 
     <Button
-        android:id="@+id/btn_back"
+        android:id="@+id/btnGoToBackTraining"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/btn_legs"
+        android:layout_below="@id/btnGoToLegsTraining"
         android:layout_marginHorizontal="60sp"
         android:layout_marginTop="23sp"
         android:backgroundTint="@color/background"
         android:fontFamily="@font/roboto_bold"
+        android:minHeight="60sp"
         android:text="@string/back"
         android:textColor="@color/textColor"
-        android:textSize="24sp"
-        android:minHeight="60sp"/>
+        android:textSize="24sp" />
 
     <Button
-        android:id="@+id/btn_breast"
+        android:id="@+id/btnGoToBreastTraining"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/btn_back"
+        android:layout_below="@id/btnGoToBackTraining"
         android:layout_marginHorizontal="60sp"
         android:layout_marginTop="23sp"
         android:backgroundTint="@color/background"
         android:fontFamily="@font/roboto_bold"
+        android:minHeight="60sp"
         android:text="@string/breast"
         android:textColor="@color/textColor"
-        android:textSize="24sp"
-        android:minHeight="60sp"/>
+        android:textSize="24sp" />
 
     <Button
-        android:id="@+id/btn_press"
+        android:id="@+id/btnGoToPressTraining"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/btn_breast"
+        android:layout_below="@id/btnGoToBreastTraining"
         android:layout_marginHorizontal="60sp"
         android:layout_marginTop="23sp"
         android:backgroundTint="@color/background"
@@ -123,18 +123,18 @@
         android:minHeight="60sp"/>
 
     <Button
-        android:id="@+id/btn_buttocks"
+        android:id="@+id/btnGoToButtocksTraining"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/btn_press"
+        android:layout_below="@id/btnGoToBreastTraining"
         android:layout_marginHorizontal="60sp"
         android:layout_marginTop="23sp"
         android:backgroundTint="@color/background"
         android:fontFamily="@font/roboto_bold"
+        android:minHeight="60sp"
         android:text="@string/buttocks"
         android:textColor="@color/textColor"
-        android:textSize="24sp"
-        android:minHeight="60sp"/>
+        android:textSize="24sp" />
 
 
 
