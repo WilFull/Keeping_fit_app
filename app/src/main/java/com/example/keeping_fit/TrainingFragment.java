@@ -39,12 +39,23 @@ public class TrainingFragment extends Fragment {
             }
         });
 
+        // кнопка "Ноги"
         Button btnGoToLegsTraining = (Button) view.findViewById(R.id.btnGoToLegsTraining); // объявляем кнопку
         btnGoToLegsTraining.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 LegsMenuFragment legsMenuFragment = new LegsMenuFragment();
                 ((MainMenuActivity)getActivity()).setNewFragment(legsMenuFragment);
+            }
+        });
+
+        // Кнопка спина/плечи
+        Button btnGoToBackTraining = (Button) view.findViewById(R.id.btnGoToBackTraining); // объявляем кнопку
+        btnGoToBackTraining.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                BackMenuFragment backMenuFragment = new BackMenuFragment();
+                ((MainMenuActivity)getActivity()).setNewFragment(backMenuFragment);
             }
         });
 
