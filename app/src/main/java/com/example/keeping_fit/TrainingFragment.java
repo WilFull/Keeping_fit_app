@@ -29,14 +29,22 @@ public class TrainingFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.training_layout, container, false);
 
-        Button btnGoToHandsTraining = (Button) view.findViewById(R.id.btnGoToHandsTraining); // объявляем кнопку
-
         // кнопка "Руки"
+        Button btnGoToHandsTraining = (Button) view.findViewById(R.id.btnGoToHandsTraining); // объявляем кнопку
         btnGoToHandsTraining.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 HandsMenuFragment handsMenuFragment = new HandsMenuFragment();
                 ((MainMenuActivity)getActivity()).setNewFragment(handsMenuFragment);
+            }
+        });
+
+        Button btnGoToLegsTraining = (Button) view.findViewById(R.id.btnGoToLegsTraining); // объявляем кнопку
+        btnGoToLegsTraining.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                LegsMenuFragment legsMenuFragment = new LegsMenuFragment();
+                ((MainMenuActivity)getActivity()).setNewFragment(legsMenuFragment);
             }
         });
 
