@@ -97,7 +97,7 @@
             android:fontFamily="@font/roboto_thin"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:text="@string/f_gender"
+            android:hint="@string/f_gender"
             android:textAlignment="center"
 
             android:textColor="@color/black"
@@ -113,7 +113,7 @@
             android:fontFamily="@font/roboto_thin"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:text="@string/m_gender"
+            android:hint="@string/m_gender"
             android:textAlignment="center"
 
             android:textColor="@color/black"
