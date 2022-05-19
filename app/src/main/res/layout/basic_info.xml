@@ -10,7 +10,7 @@
         android:id="@+id/get_to_know"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70sp"
+        android:layout_marginTop="35sp"
         android:fontFamily="@font/roboto_bold"
         android:text="@string/get_to_know"
         android:textAlignment="center"
@@ -29,10 +29,25 @@
         android:textSize="14sp" />
 
     <EditText
-        android:id="@+id/user_age"
+        android:id="@+id/edUserName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/type_info"
+        android:layout_marginHorizontal="82sp"
+        android:layout_marginTop="23sp"
+        android:background="@color/background"
+        android:fontFamily="@font/roboto_thin"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/edUserAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edUserName"
         android:layout_marginHorizontal="82sp"
         android:layout_marginTop="22dp"
         android:background="@color/background"
@@ -44,10 +59,10 @@
         android:textSize="14sp" />
 
     <EditText
-        android:id="@+id/user_hight"
+        android:id="@+id/edUserHight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/user_age"
+        android:layout_below="@+id/edUserAge"
         android:layout_marginHorizontal="82sp"
         android:layout_marginTop="22dp"
         android:background="@color/background"
@@ -59,10 +74,10 @@
         android:textSize="14sp" />
 
     <EditText
-        android:id="@+id/user_weight"
+        android:id="@+id/edUserWeight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/user_hight"
+        android:layout_below="@+id/edUserHight"
         android:layout_marginHorizontal="82sp"
         android:layout_marginTop="22dp"
         android:background="@color/background"
@@ -78,7 +93,7 @@
         android:id="@+id/gender_linear_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/user_weight"
+        android:layout_below="@id/edUserWeight"
         android:layout_marginStart="82dp"
         android:layout_marginTop="22dp"
         android:layout_marginEnd="82dp"
@@ -125,7 +140,7 @@
         android:id="@+id/btnСntToMainMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/user_weight"
+        android:layout_below="@id/edUserWeight"
         android:layout_marginHorizontal="84sp"
         android:layout_marginTop="93dp"
         android:backgroundTint="@color/btnColor"

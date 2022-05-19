@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 
-public class BasicInfoFragment extends Fragment {
+public class ActivityMainFragment extends Fragment {
 
 
     @Override

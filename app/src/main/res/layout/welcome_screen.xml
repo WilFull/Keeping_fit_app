@@ -29,27 +29,27 @@
         android:textSize="14sp" />
 
     <EditText
-        android:id="@+id/user_filed"
+        android:id="@+id/edUserName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/text_wrt_name"
         android:layout_marginHorizontal="44sp"
         android:layout_marginTop="23sp"
+        android:background="@color/background"
         android:fontFamily="@font/roboto_thin"
         android:hint="@string/name"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:textColor="@color/black"
-        android:textSize="14sp"
-        android:background="@color/background"/>
+        android:textSize="14sp" />
 
     <Button
         android:id="@+id/btnGoToBasicInfo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/user_filed"
+        android:layout_below="@+id/edUserName"
         android:layout_marginHorizontal="44sp"
-        android:layout_marginTop="23sp"
+        android:layout_marginTop="23dp"
         android:backgroundTint="@color/btnColor"
         android:fontFamily="@font/roboto_bold"
         android:text="@string/btn_continue"

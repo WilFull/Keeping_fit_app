@@ -5,7 +5,7 @@
     <string name="name">Имя...</string>
     <string name="btn_continue">Продолжить</string>
     <string name="get_to_know">Узнаем вас получше?</string>
-    <string name="type_info">Введите ваши физические показатели</string>
+    <string name="type_info">Введите ваши данные</string>
     <string name="age">Возраст...</string>
     <string name="hight">Рост...</string>
     <string name="weight">Вес...</string>

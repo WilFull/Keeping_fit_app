@@ -1,6 +1,5 @@
 package com.example.keeping_fit;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -30,8 +29,8 @@ public class HealthFragment extends Fragment {
         btnUpdateData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                BasicInfoFragment basicInfoFragment = new BasicInfoFragment();
-                ((MainMenuActivity)getActivity()).setNewFragment(basicInfoFragment);
+                ActivityMainFragment activityMainFragment = new ActivityMainFragment();
+                ((MainMenuActivity)getActivity()).setNewFragment(activityMainFragment);
             }
         });
 
