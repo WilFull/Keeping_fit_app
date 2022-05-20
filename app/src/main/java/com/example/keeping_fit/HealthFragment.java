@@ -16,7 +16,7 @@ import android.widget.TextView;
 public class HealthFragment extends Fragment {
 
     public int count = 0;
-    //TextView txt;
+    TextView txt;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
