@@ -59,7 +59,7 @@
         android:textSize="14sp" />
 
     <EditText
-        android:id="@+id/edUserHight"
+        android:id="@+id/edUserHit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/edUserAge"
@@ -77,7 +77,7 @@
         android:id="@+id/edUserWeight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/edUserHight"
+        android:layout_below="@+id/edUserHit"
         android:layout_marginHorizontal="82sp"
         android:layout_marginTop="22dp"
         android:background="@color/background"

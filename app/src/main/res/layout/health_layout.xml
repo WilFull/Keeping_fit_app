@@ -267,17 +267,46 @@
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/how_much"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/your_hight"
-        android:layout_marginLeft="38dp"
-        android:layout_marginTop="310sp"
-        android:fontFamily="@font/roboto_bold"
-        android:text="@string/drank_howMuch"
-        android:textColor="@color/textColor"
-        android:textSize="20sp" />
+    <LinearLayout
+        android:id="@+id/linear_layout_glass"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/daily_calorie"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="200sp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="286dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <TextView
+            android:id="@+id/how_much"
+            android:layout_width="391dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/drank_howMuch"
+            android:textColor="@color/textColor"
+
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/count_glass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10sp"
+            android:backgroundTint="@color/background"
+            android:fontFamily="@font/roboto_bold"
+
+            android:textColor="@color/textColor"
+            android:textSize="24sp"
+            android:layout_weight="1"/>
+
+
+
+    </LinearLayout>
 
 
 

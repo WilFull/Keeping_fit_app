@@ -9,9 +9,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
+
 
 
 public class HealthFragment extends Fragment {
+
+    public int count = 0;
+    TextView txt;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -34,7 +39,21 @@ public class HealthFragment extends Fragment {
             }
         });
 
+        // кнопка +
+        Button btn_plus = (Button) view.findViewById(R.id.btn_plus); // объявляем кнопку
+        //txt = (TextView) view.findViewById();
+        btn_plus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                count++;
+            }
+        });
+
         return view;
+    }
+
+    public void display(int n) {
+
     }
 
 
