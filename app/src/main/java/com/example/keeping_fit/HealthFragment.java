@@ -41,11 +41,22 @@ public class HealthFragment extends Fragment {
 
         // кнопка +
         Button btn_plus = (Button) view.findViewById(R.id.btn_plus); // объявляем кнопку
-        //txt = (TextView) view.findViewById();
+        txt = (TextView) view.findViewById(R.id.count_glass);
         btn_plus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 count++;
+                txt.setText("" + count);
+            }
+        });
+
+        // кнопка -
+        Button btn_minus = (Button) view.findViewById(R.id.btn_minus); // объявляем кнопку
+        btn_minus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                count--;
+                txt.setText("" + count);
             }
         });
 
@@ -53,7 +64,7 @@ public class HealthFragment extends Fragment {
     }
 
     public void display(int n) {
-
+        //txt.setText(n);
     }
 
 

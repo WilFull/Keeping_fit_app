@@ -299,7 +299,7 @@
             android:layout_marginLeft="10sp"
             android:backgroundTint="@color/background"
             android:fontFamily="@font/roboto_bold"
-
+            android:text="0"
             android:textColor="@color/textColor"
             android:textSize="24sp"
             android:layout_weight="1"/>
