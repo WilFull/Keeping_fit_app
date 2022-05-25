@@ -1,3 +1,5 @@
+// Класс, являющийся фундаметальным строительным блоком. Активити для макета Экрана регистрации
+
 package com.example.keeping_fit;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,40 +23,47 @@ public class MainActivity extends AppCompatActivity {
     private String USER_KEY = "User";
 
     @Override
-    // начать activity
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.basic_info);
+    // Процедура, запускающая activity
+    protected void onCreate(Bundle savedInstanceState) { // параметр Bundle -  это параметр, который представляет собой объект пакета, содержащий ранее сохраненное состояние действия
+        super.onCreate(savedInstanceState); // этот метод - это конструктор родительского класса, выполняющий необходимые операции для работы активности
+                                            // параметр savedInstanceState - Это параметр, который представляет собой объект пакета, содержащий ранее сохраненное состояние действия
+        setContentView(R.layout.basic_info); // метод - Объект класса вызывающий процедуру для поиска объекта view по id
+                                            // парметр R.layout.basic_info - Ссылка на экран регистрации
 
-        // Считываем объект btnGoToBasicInfo в Activity welcome_screen, и преобразуем его в кнопку
+        // Создаем объект типа "кнопка". Считываем объект btnGoToBasicInfo в Activity main_menu, и преобразуем его в кнопку
         Button btnСntToMainMenu = (Button) findViewById(R.id.btnСntToMainMenu);
-        // Создаем слушатель кнопки
+        // метод - Создаем слушатель для кнопки btnСntToMainMenu
         View.OnClickListener oclBtnСntToMainMenu = new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                // Для осуществления перехода на basic_info создаем некую сущность
+            // метод обработки событий нажатий для кнопки "Продолжить"
+            public void onClick(View view) { // View view -  объект, являющийся основным строительным элементом элементов пользовательского интерфейса
+                // Для осуществления перехода на main_menu создаем сущность
                 Intent intent = new Intent(MainActivity.this, MainMenuActivity.class);
-                startActivity(intent); //запускаем переход
+                startActivity(intent); // метод, запускающий переход
             }
         };
-        // Назначаем кнопке обработчик
+        //метод (объект класса, вызывающие метод). Назначаем кнопке обработчик
         btnСntToMainMenu.setOnClickListener(oclBtnСntToMainMenu);
 
+        // Создаем объект типа "кнопка". Считываем объект btnSkipToMainMenu в Activity main_menu, и преобразуем его в кнопку
         Button btnSkipToMainMenu = (Button) findViewById(R.id.btnSkipToMainMenu);
+        // метод - Создаем слушатель для кнопки btnSkipToMainMenu
         View.OnClickListener oclBtnSkipToMainMenu = new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-               // Intent intent = new Intent(MainActivity.this, MainMenuActivity.class);
-                //startActivity(intent);
+            //  метод обработки событий нажатий для кнопки "Пропустить"
+            public void onClick(View view) { // View view -  объект, являющийся основным строительным элементом элементов пользовательского интерфейса
+               Intent intent = new Intent(MainActivity.this, MainMenuActivity.class); // Для осуществления перехода на main_menu создаем сущность
+               startActivity(intent); // метод, запускающий переход
             }
         };
+        //метод (объект класса, вызывающие метод). Назначаем кнопке обработчик
         btnSkipToMainMenu.setOnClickListener(oclBtnSkipToMainMenu);
 
-        init();
+        init(); // вызываем метод для присвоения значений переменным EditText
     }
 
     // метод для сохранения данных в бд
-    private void onClickSave(View view) {
+    private void onClickSave(View view) { // View view -  объект, являющийся основным строительным элементом элементов пользовательского интерфейса
      //   String id = dataBase.getKey(); // id нашей бд
         String name = edUserName.getText().toString(); // сохраняем то, что ввел пользователь
         String age = edUserAge.getText().toString();

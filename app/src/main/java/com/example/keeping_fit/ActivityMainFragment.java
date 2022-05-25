@@ -1,3 +1,5 @@
+// этот класс не нужен
+
 package com.example.keeping_fit;
 
 import android.content.Intent;
